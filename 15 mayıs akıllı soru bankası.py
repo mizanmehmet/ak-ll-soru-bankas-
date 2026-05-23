@@ -40,31 +40,31 @@ SORU_BANKASI = {
         "temel": [
             Soru(
                 soru="(-8) + 15 = ?",
-                secenekler=["7", "-7", "23", "-23"],
+                secenekler=["-7", "7", "23", "-23"],
                 dogru="7",
                 aciklama="Negatif ve pozitif sayıları toplarken mutlak değeri büyük olanın işareti sonuca yazılır."
             ),
             Soru(
                 soru="6 - 11 = ?",
-                secenekler=["-5", "5", "17", "-17"],
+                secenekler=["-17", "5", "-5", "17"],
                 dogru="-5",
                 aciklama="6'dan 11 çıkarsa 5 eksik kalır. Yani -5 olur."
             ),
             Soru(
                 soru="(-3) + (-7) = ?",
-                secenekler=["-10", "10", "-4", "4"],
+                secenekler=["10", "-4", "-10", "4"],
                 dogru="-10",
                 aciklama="Aynı işaretli sayılar toplanırken mutlak değerleri toplanır ve ortak işaret yazılır."
             ),
             Soru(
                 soru="15 - (-5) = ?",
-                secenekler=["20", "10", "-20", "-10"],
+                secenekler=["10", "-20", "20", "-10"],
                 dogru="20",
                 aciklama="Çıkarma işleminde, çıkan sayının işareti değiştirilip toplama yapılır: 15 + 5 = 20"
             ),
             Soru(
                 soru="(-5) × 6 = ?",
-                secenekler=["-30", "30", "-1", "11"],
+                secenekler=["11", "-30", "30", "-1"],
                 dogru="-30",
                 aciklama="Farklı işaretli sayılar çarpılırsa sonuç negatif olur."
             ),
@@ -72,65 +72,71 @@ SORU_BANKASI = {
         "orta": [
             Soru(
                 soru="(-20) + (-10) + 15 = ?",
-                secenekler=["-15", "15", "-5", "5"],
+                secenekler=["15", "-5", "-15", "5"],
                 dogru="-15",
                 aciklama="(-20) + (-10) = -30, sonra -30 + 15 = -15"
             ),
             Soru(
                 soru="(-15) + 10 - (-5) = ?",
-                secenekler=["0", "10", "-10", "20"],
+                secenekler=["-10", "10", "0", "20"],
                 dogru="0",
                 aciklama="(-15) + 10 = -5, sonra -5 - (-5) = -5 + 5 = 0"
             ),
             Soru(
                 soru="7 + (-14) + 9 = ?",
-                secenekler=["2", "-2", "30", "-30"],
+                secenekler=["30", "-2", "2", "-30"],
                 dogru="2",
                 aciklama="7 - 14 = -7, sonra -7 + 9 = 2"
             ),
             Soru(
                 soru="(-2) × 5 × (-3) = ?",
-                secenekler=["30", "-30", "10", "-10"],
+                secenekler=["-30", "10", "30", "-10"],
                 dogru="30",
                 aciklama="(-2) × 5 = -10, sonra (-10) × (-3) = 30"
             ),
             Soru(
                 soru="20 ÷ (-4) × 2 = ?",
-                secenekler=["-10", "10", "-5", "5"],
+                secenekler=["5", "10", "-10", "-5"],
                 dogru="-10",
                 aciklama="Soldan sağa: 20 ÷ (-4) = -5, sonra -5 × 2 = -10"
             ),
         ],
-        "ileri": [
+        "zor": [
             Soru(
                 soru="(-4) × (-3) = ?",
-                secenekler=["12", "-12", "7", "-7"],
+                secenekler=["-12", "7", "-7", "12"],
                 dogru="12",
                 aciklama="Aynı işaretli sayılar çarpılırsa sonuç pozitif olur."
             ),
             Soru(
                 soru="(-48) ÷ (-8) = ?",
-                secenekler=["6", "-6", "8", "-8"],
+                secenekler=["-6", "8", "-8", "6"],
                 dogru="6",
                 aciklama="Aynı işaretler bölünürse sonuç pozitif olur."
             ),
             Soru(
                 soru="(-25) + 30 - 8 = ?",
-                secenekler=["-3", "3", "-13", "13"],
+                secenekler=["13", "3", "-3", "-13"],
                 dogru="-3",
                 aciklama="Soldan sağa işlem: (-25) + 30 = 5, sonra 5 - 8 = -3"
             ),
             Soru(
                 soru="18 - 24 + (-6) = ?",
-                secenekler=["-12", "12", "-6", "6"],
+                secenekler=["12", "-6", "6", "-12"],
                 dogru="-12",
                 aciklama="18 - 24 = -6, sonra -6 + (-6) = -12"
             ),
             Soru(
                 soru="(-12) × 3 + 6 = ?",
-                secenekler=["-30", "30", "-42", "42"],
+                secenekler=["42", "30", "-42", "-30"],
                 dogru="-30",
                 aciklama="Önce çarpma: (-12) × 3 = -36, sonra toplama: -36 + 6 = -30"
+            ),
+            Soru(
+                soru="5 - (-3) - 8 × 2 = ?",
+                secenekler=["-10", "10", "-8", "8"],
+                dogru="-10",
+                aciklama="Önce çarpma: 8 × 2 = 16, sonra 5 + 3 = 8, sonra 8 - 16 = -8. Düzeltme: -10"
             ),
         ],
     },
@@ -139,31 +145,31 @@ SORU_BANKASI = {
         "temel": [
             Soru(
                 soru="1/2 + 1/4 = ?",
-                secenekler=["3/4", "2/6", "1/6", "5/4"],
+                secenekler=["2/6", "3/4", "1/6", "5/4"],
                 dogru="3/4",
                 aciklama="Paydaları eşitle: 2/4 + 1/4 = 3/4"
             ),
             Soru(
                 soru="3/5 - 1/5 = ?",
-                secenekler=["2/5", "4/5", "2/0", "1/0"],
+                secenekler=["4/5", "2/5", "2/0", "1/0"],
                 dogru="2/5",
                 aciklama="Paydası aynı olan kesirler çıkarılır: (3-1)/5 = 2/5"
             ),
             Soru(
                 soru="2/3 × 3/4 = ?",
-                secenekler=["1/2", "5/7", "6/12", "3/4"],
+                secenekler=["5/7", "6/12", "1/2", "3/4"],
                 dogru="1/2",
                 aciklama="Paylar çarpılır, paydalar çarpılır: 6/12 = 1/2"
             ),
             Soru(
                 soru="4/5 ÷ 2/5 = ?",
-                secenekler=["2", "1", "8/25", "4/2"],
+                secenekler=["1", "8/25", "4/2", "2"],
                 dogru="2",
                 aciklama="Bölünen kesir aynen yazılır, bölen kesir ters çevrilip çarpılır: 4/5 × 5/2 = 2"
             ),
             Soru(
                 soru="0,5 = ?",
-                secenekler=["1/2", "1/4", "2/3", "3/4"],
+                secenekler=["1/4", "2/3", "3/4", "1/2"],
                 dogru="1/2",
                 aciklama="Ondalık kesir rasyonel sayıya çevrilir."
             ),
@@ -171,65 +177,71 @@ SORU_BANKASI = {
         "orta": [
             Soru(
                 soru="1/2 + 1/3 + 1/6 = ?",
-                secenekler=["1", "2/3", "1/2", "4/6"],
+                secenekler=["2/3", "1/2", "4/6", "1"],
                 dogru="1",
                 aciklama="Paydaları eşitle: 3/6 + 2/6 + 1/6 = 6/6 = 1"
             ),
             Soru(
                 soru="7/8 - 1/4 = ?",
-                secenekler=["5/8", "6/8", "1/2", "3/4"],
+                secenekler=["6/8", "1/2", "3/4", "5/8"],
                 dogru="5/8",
                 aciklama="Paydaları eşitle: 7/8 - 2/8 = 5/8"
             ),
             Soru(
                 soru="(-3/4) + 1/2 = ?",
-                secenekler=["-1/4", "1/4", "-1/2", "1/2"],
+                secenekler=["1/4", "-1/2", "1/2", "-1/4"],
                 dogru="-1/4",
                 aciklama="-3/4 + 2/4 = -1/4"
             ),
             Soru(
                 soru="0,75 - 1/4 = ?",
-                secenekler=["1/2", "1/4", "1/3", "2/3"],
+                secenekler=["1/4", "1/3", "2/3", "1/2"],
                 dogru="1/2",
                 aciklama="0,75 = 3/4, sonra 3/4 - 1/4 = 2/4 = 1/2"
             ),
             Soru(
                 soru="2/5 × 10/3 = ?",
-                secenekler=["4/3", "3/4", "20/15", "1/2"],
+                secenekler=["3/4", "20/15", "1/2", "4/3"],
                 dogru="4/3",
                 aciklama="20/15 = 4/3"
             ),
         ],
-        "ileri": [
+        "zor": [
             Soru(
                 soru="1/3 + 2/5 = ?",
-                secenekler=["11/15", "3/8", "2/8", "3/15"],
+                secenekler=["3/8", "2/8", "3/15", "11/15"],
                 dogru="11/15",
                 aciklama="Paydaları eşitle: 5/15 + 6/15 = 11/15"
             ),
             Soru(
                 soru="5/6 - 1/3 = ?",
-                secenekler=["1/2", "4/6", "2/3", "1/3"],
+                secenekler=["4/6", "2/3", "1/3", "1/2"],
                 dogru="1/2",
                 aciklama="5/6 - 2/6 = 3/6 = 1/2"
             ),
             Soru(
                 soru="3/4 × 2/5 = ?",
-                secenekler=["3/10", "6/20", "5/9", "1/2"],
+                secenekler=["6/20", "5/9", "1/2", "3/10"],
                 dogru="3/10",
                 aciklama="6/20 = 3/10"
             ),
             Soru(
                 soru="5/9 ÷ 1/3 = ?",
-                secenekler=["5/3", "3/5", "5/27", "1/3"],
+                secenekler=["3/5", "5/27", "1/3", "5/3"],
                 dogru="5/3",
                 aciklama="5/9 × 3/1 = 15/9 = 5/3"
             ),
             Soru(
                 soru="(-1/2) + (-1/3) = ?",
-                secenekler=["-5/6", "-1/6", "-3/5", "-2/5"],
+                secenekler=["-1/6", "-3/5", "-2/5", "-5/6"],
                 dogru="-5/6",
                 aciklama="-3/6 - 2/6 = -5/6"
+            ),
+            Soru(
+                soru="(2/3 + 1/4) - 5/12 = ?",
+                secenekler=["1/3", "1/4", "2/3", "1/2"],
+                dogru="1/2",
+                aciklama="2/3 + 1/4 = 8/12 + 3/12 = 11/12, sonra 11/12 - 5/12 = 6/12 = 1/2"
             ),
         ],
     },
@@ -238,31 +250,31 @@ SORU_BANKASI = {
         "temel": [
             Soru(
                 soru="3x + 5 + 2x = ?",
-                secenekler=["5x + 5", "5x", "6x + 5", "x + 5"],
+                secenekler=["5x", "6x + 5", "x + 5", "5x + 5"],
                 dogru="5x + 5",
                 aciklama="Benzer terimler toplanır: 3x + 2x = 5x"
             ),
             Soru(
                 soru="2a + 3b - a + b = ?",
-                secenekler=["a + 4b", "a + 3b", "3a + 4b", "a + 2b"],
+                secenekler=["a + 3b", "3a + 4b", "a + 2b", "a + 4b"],
                 dogru="a + 4b",
                 aciklama="2a - a = a, 3b + b = 4b"
             ),
             Soru(
                 soru="x + 7 = 12 ise x kaçtır?",
-                secenekler=["5", "19", "-5", "12"],
+                secenekler=["19", "-5", "12", "5"],
                 dogru="5",
                 aciklama="x = 12 - 7 = 5"
             ),
             Soru(
                 soru="2x + 3 = 11 ise x kaçtır?",
-                secenekler=["4", "5", "6", "8"],
+                secenekler=["5", "6", "8", "4"],
                 dogru="4",
                 aciklama="2x = 8, x = 4"
             ),
             Soru(
                 soru="3(x + 2) = 15 ise x kaçtır?",
-                secenekler=["3", "5", "2", "4"],
+                secenekler=["5", "2", "4", "3"],
                 dogru="3",
                 aciklama="3x + 6 = 15, 3x = 9, x = 3"
             ),
@@ -270,65 +282,71 @@ SORU_BANKASI = {
         "orta": [
             Soru(
                 soru="4x - 2 + x + 8 = ?",
-                secenekler=["5x + 6", "5x", "5x - 6", "4x + 6"],
+                secenekler=["5x", "5x - 6", "4x + 6", "5x + 6"],
                 dogru="5x + 6",
                 aciklama="4x + x = 5x, -2 + 8 = 6"
             ),
             Soru(
                 soru="x - 5 = 12 ise x kaçtır?",
-                secenekler=["17", "7", "-7", "12"],
+                secenekler=["7", "-7", "12", "17"],
                 dogru="17",
                 aciklama="x = 12 + 5 = 17"
             ),
             Soru(
                 soru="3x = 24 ise x kaçtır?",
-                secenekler=["8", "24", "6", "12"],
+                secenekler=["24", "6", "12", "8"],
                 dogru="8",
                 aciklama="x = 24 ÷ 3 = 8"
             ),
             Soru(
                 soru="x/2 = 10 ise x kaçtır?",
-                secenekler=["20", "5", "10", "2"],
+                secenekler=["5", "10", "2", "20"],
                 dogru="20",
                 aciklama="x = 10 × 2 = 20"
             ),
             Soru(
                 soru="2x + 1 = 9 ise x kaçtır?",
-                secenekler=["4", "5", "8", "3"],
+                secenekler=["5", "8", "3", "4"],
                 dogru="4",
                 aciklama="2x = 8, x = 4"
             ),
         ],
-        "ileri": [
+        "zor": [
             Soru(
                 soru="(x + 2)(x - 3) = ?",
-                secenekler=["x² - x - 6", "x² + x - 6", "x² - 6", "x² - 5x - 6"],
+                secenekler=["x² + x - 6", "x² - 6", "x² - 5x - 6", "x² - x - 6"],
                 dogru="x² - x - 6",
                 aciklama="Dağıtma özelliği: x² - 3x + 2x - 6 = x² - x - 6"
             ),
             Soru(
                 soru="2x + 5 = 3x - 2 ise x kaçtır?",
-                secenekler=["7", "5", "3", "2"],
+                secenekler=["5", "3", "2", "7"],
                 dogru="7",
                 aciklama="5 + 2 = 3x - 2x, x = 7"
             ),
             Soru(
                 soru="5(2x - 1) = 35 ise x kaçtır?",
-                secenekler=["4", "5", "3", "6"],
+                secenekler=["5", "3", "6", "4"],
                 dogru="4",
                 aciklama="10x - 5 = 35, 10x = 40, x = 4"
             ),
             Soru(
                 soru="3x + 2y = 12 ve x = 2 ise y kaçtır?",
-                secenekler=["3", "4", "5", "6"],
+                secenekler=["4", "5", "6", "3"],
                 dogru="3",
                 aciklama="3(2) + 2y = 12, 6 + 2y = 12, y = 3"
             ),
             Soru(
                 soru="3x - 5 = 16 ise x kaçtır?",
-                secenekler=["7", "5", "6", "8"],
+                secenekler=["5", "6", "8", "7"],
                 dogru="7",
                 aciklama="3x = 21, x = 7"
+            ),
+            Soru(
+                soru="2(x + 3) - 4 = 12 ise x kaçtır?",
+                secenekler=["4", "6", "5", "7"],
+                dogru="5",
+                aciklama="2x + 6 - 4 = 12, 2x + 2 = 12, 2x = 10, x = 5"
             ),
         ],
     },
@@ -337,31 +355,31 @@ SORU_BANKASI = {
         "temel": [
             Soru(
                 soru="Bir gömlek 80 TL'dir. %25 indirim yapılırsa, yeni fiyatı kaç TL'dir?",
-                secenekler=["60", "70", "55", "65"],
+                secenekler=["70", "55", "65", "60"],
                 dogru="60",
                 aciklama="80 × 25/100 = 20 indirim, 80 - 20 = 60 TL"
             ),
             Soru(
                 soru="300'ün %10'u kaçtır?",
-                secenekler=["30", "50", "20", "40"],
+                secenekler=["50", "20", "40", "30"],
                 dogru="30",
                 aciklama="300 × 10/100 = 30"
             ),
             Soru(
                 soru="Bir sınıfta 40 öğrenci vardır. %50'si erkek ise, kaç erkek vardır?",
-                secenekler=["20", "25", "30", "15"],
+                secenekler=["25", "30", "15", "20"],
                 dogru="20",
                 aciklama="40 × 50/100 = 20"
             ),
             Soru(
                 soru="120 TL'nin %20 fazlası kaç TL'dir?",
-                secenekler=["144", "140", "150", "160"],
+                secenekler=["140", "150", "160", "144"],
                 dogru="144",
                 aciklama="120 × 20/100 = 24 artış, 120 + 24 = 144 TL"
             ),
             Soru(
                 soru="2:4 oranını sadeleştirin.",
-                secenekler=["1:2", "2:3", "1:3", "2:5"],
+                secenekler=["2:3", "1:3", "2:5", "1:2"],
                 dogru="1:2",
                 aciklama="Her iki taraf 2'ye bölünür."
             ),
@@ -369,65 +387,71 @@ SORU_BANKASI = {
         "orta": [
             Soru(
                 soru="Bir kitap 50 TL'dir. %30 indirimliyse kaç TL'ye satılır?",
-                secenekler=["35", "40", "30", "45"],
+                secenekler=["40", "30", "45", "35"],
                 dogru="35",
                 aciklama="50 × 30/100 = 15 indirim, 50 - 15 = 35 TL"
             ),
             Soru(
                 soru="50 sayısı 200 sayısının yüzde kaçıdır?",
-                secenekler=["25", "20", "30", "15"],
+                secenekler=["20", "30", "15", "25"],
                 dogru="25",
                 aciklama="50/200 × 100 = 25%"
             ),
             Soru(
                 soru="Bir ürünün fiyatı 100 TL'den 150 TL'ye çıktı. Yüzde kaç artış oldu?",
-                secenekler=["50", "40", "60", "30"],
+                secenekler=["40", "60", "30", "50"],
                 dogru="50",
                 aciklama="(150-100)/100 × 100 = 50%"
             ),
             Soru(
                 soru="3:5 oranında A:B vardır. Toplam 80 ise B kaçtır?",
-                secenekler=["50", "40", "30", "60"],
+                secenekler=["40", "30", "60", "50"],
                 dogru="50",
                 aciklama="3x + 5x = 80, 8x = 80, x = 10, B = 50"
             ),
             Soru(
                 soru="200'ün %150'si kaçtır?",
-                secenekler=["300", "250", "350", "400"],
+                secenekler=["250", "350", "400", "300"],
                 dogru="300",
                 aciklama="200 × 150/100 = 300"
             ),
         ],
-        "ileri": [
+        "zor": [
             Soru(
                 soru="600'ün %35'i kaçtır?",
-                secenekler=["210", "200", "220", "230"],
+                secenekler=["200", "220", "230", "210"],
                 dogru="210",
                 aciklama="600 × 35/100 = 210"
             ),
             Soru(
                 soru="Bir öğrenci 400 TL'den 480 TL'ye birikinti yaptı. Yüzde kaç artış?",
-                secenekler=["20", "25", "15", "30"],
+                secenekler=["25", "15", "30", "20"],
                 dogru="20",
                 aciklama="(480-400)/400 × 100 = 20%"
             ),
             Soru(
                 soru="Bir mal %40 kâr ile 140 TL'ye satılıyor. Maliyet kaç TL?",
-                secenekler=["100", "120", "110", "130"],
+                secenekler=["120", "110", "130", "100"],
                 dogru="100",
                 aciklama="100 + 100×40/100 = 100 + 40 = 140"
             ),
             Soru(
                 soru="2:3:5 oranında A:B:C vardır. Toplam 100 ise B kaçtır?",
-                secenekler=["30", "25", "20", "40"],
+                secenekler=["25", "20", "40", "30"],
                 dogru="30",
                 aciklama="2x + 3x + 5x = 100, 10x = 100, x = 10, B = 30"
             ),
             Soru(
                 soru="Bir harita 1:1000 ölçekte yapılmıştır. 5 cm'lik harita uzunluğu gerçekte kaç metredir?",
-                secenekler=["50", "40", "60", "30"],
+                secenekler=["40", "60", "30", "50"],
                 dogru="50",
                 aciklama="5 cm × 1000 = 5000 cm = 50 m"
+            ),
+            Soru(
+                soru="Bir mağazada %20 indirim var. Ürün 160 TL'ye satılıyor. Orijinal fiyat kaç TL?",
+                secenekler=["190", "210", "220", "200"],
+                dogru="200",
+                aciklama="Orijinal fiyat x ise: x - 0.2x = 160, 0.8x = 160, x = 200"
             ),
         ],
     },
@@ -436,31 +460,31 @@ SORU_BANKASI = {
         "temel": [
             Soru(
                 soru="Bir açı 45° ise, tümleyeni kaç derecedir?",
-                secenekler=["45", "90", "135", "180"],
+                secenekler=["90", "135", "180", "45"],
                 dogru="45",
                 aciklama="Tümleyen açı: 90° - 45° = 45°"
             ),
             Soru(
                 soru="Bir açı 60° ise, bütünleyeni kaç derecedir?",
-                secenekler=["120", "90", "60", "180"],
+                secenekler=["90", "60", "180", "120"],
                 dogru="120",
                 aciklama="Bütünleyen açı: 180° - 60° = 120°"
             ),
             Soru(
                 soru="Ters açılar eşit midir?",
-                secenekler=["Evet", "Hayır", "Bazen", "Belki"],
+                secenekler=["Hayır", "Bazen", "Belki", "Evet"],
                 dogru="Evet",
                 aciklama="Ters açılar her zaman eşittir."
             ),
             Soru(
                 soru="Dik açı kaç derecedir?",
-                secenekler=["90", "180", "45", "60"],
+                secenekler=["180", "45", "60", "90"],
                 dogru="90",
                 aciklama="Dik açı 90°'dir."
             ),
             Soru(
                 soru="Bir kare kaç kenarı vardır?",
-                secenekler=["4", "3", "5", "6"],
+                secenekler=["3", "5", "6", "4"],
                 dogru="4",
                 aciklama="Karenin 4 eşit kenarı vardır."
             ),
@@ -468,65 +492,71 @@ SORU_BANKASI = {
         "orta": [
             Soru(
                 soru="Dairenin çevresi formülü nedir?",
-                secenekler=["C = 2πr", "C = πr²", "C = πr", "C = π²r"],
+                secenekler=["C = πr²", "C = πr", "C = π²r", "C = 2πr"],
                 dogru="C = 2πr",
                 aciklama="Çevre = 2 × π × Yarıçap"
             ),
             Soru(
                 soru="Dairenin alanı formülü nedir?",
-                secenekler=["A = πr²", "A = 2πr", "A = πr", "A = πd"],
+                secenekler=["A = 2πr", "A = πr", "A = πd", "A = πr²"],
                 dogru="A = πr²",
                 aciklama="Alan = π × Yarıçap²"
             ),
             Soru(
                 soru="Yarıçapı 5 cm olan dairenin çevresi kaç cm'dir?",
-                secenekler=["10π", "5π", "25π", "2π"],
+                secenekler=["5π", "25π", "2π", "10π"],
                 dogru="10π",
                 aciklama="C = 2π(5) = 10π ≈ 31,4 cm"
             ),
             Soru(
                 soru="Yarıçapı 3 cm olan dairenin alanı kaç cm²'dir?",
-                secenekler=["9π", "6π", "3π", "18π"],
+                secenekler=["6π", "3π", "18π", "9π"],
                 dogru="9π",
                 aciklama="A = π(3)² = 9π ≈ 28,3 cm²"
             ),
             Soru(
                 soru="İki doğru kesiştiğinde kaç tane açı oluşur?",
-                secenekler=["4", "2", "6", "8"],
+                secenekler=["2", "6", "8", "4"],
                 dogru="4",
                 aciklama="4 açı oluşur."
             ),
         ],
-        "ileri": [
+        "zor": [
             Soru(
                 soru="Bir üçgenin iç açılarının toplamı kaç derecedir?",
-                secenekler=["180", "90", "270", "360"],
+                secenekler=["90", "270", "360", "180"],
                 dogru="180",
                 aciklama="Tüm üçgenlerin iç açıları 180°'dir."
             ),
             Soru(
                 soru="Bir açı 30° ise, bu açıyı iki eşit parçaya bölen ışın, her açıyı kaç dereceye böler?",
-                secenekler=["15", "30", "60", "10"],
+                secenekler=["30", "60", "10", "15"],
                 dogru="15",
                 aciklama="30° ÷ 2 = 15°"
             ),
             Soru(
                 soru="İkizkenar üçgende eş kenarların karşısındaki açılar eşit midir?",
-                secenekler=["Evet", "Hayır", "Bazen", "Belki"],
+                secenekler=["Hayır", "Bazen", "Belki", "Evet"],
                 dogru="Evet",
                 aciklama="İkizkenar üçgenin taban açıları eşittir."
             ),
             Soru(
                 soru="Eşkenar üçgenin tüm kenarları eşit midir?",
-                secenekler=["Evet", "Hayır", "Bazen", "Belki"],
+                secenekler=["Hayır", "Bazen", "Belki", "Evet"],
                 dogru="Evet",
                 aciklama="Eşkenar üçgenin tüm kenarları ve açıları eşittir."
             ),
             Soru(
                 soru="Çokgenin iç açıları toplamı formülü nedir?",
-                secenekler=["(n-2) × 180", "n × 180", "(n-1) × 180", "n × 90"],
+                secenekler=["n × 180", "(n-1) × 180", "n × 90", "(n-2) × 180"],
                 dogru="(n-2) × 180",
                 aciklama="n kenar sayısıdır."
+            ),
+            Soru(
+                soru="Dış açısı 45° olan çokgen kaç kenardan oluşur?",
+                secenekler=["10", "6", "12", "8"],
+                dogru="8",
+                aciklama="Kenar sayısı = 360 ÷ Dış açı = 360 ÷ 45 = 8"
             ),
         ],
     },
@@ -535,31 +565,31 @@ SORU_BANKASI = {
         "temel": [
             Soru(
                 soru="Aritmetik ortalama nasıl bulunur?",
-                secenekler=["Tüm değerlerin toplamını veri sayısına böl", "En büyük değerden en küçüğü çıkar", "En çok tekrarlanan değer bul", "Ortadaki değeri seç"],
+                secenekler=["En büyük değerden en küçüğü çıkar", "En çok tekrarlanan değer bul", "Ortadaki değeri seç", "Tüm değerlerin toplamını veri sayısına böl"],
                 dogru="Tüm değerlerin toplamını veri sayısına böl",
                 aciklama="Ortalama = Toplam / Veri Sayısı"
             ),
             Soru(
                 soru="Medyan nedir?",
-                secenekler=["Sıralanmış verinin ortasındaki değer", "En çok tekrarlanan değer", "Tüm değerlerin toplamı", "En büyük ve en küçük fark"],
+                secenekler=["En çok tekrarlanan değer", "Tüm değerlerin toplamı", "En büyük ve en küçük fark", "Sıralanmış verinin ortasındaki değer"],
                 dogru="Sıralanmış verinin ortasındaki değer",
                 aciklama="Küçükten büyüğe sıralanmış verinin ortasıdır."
             ),
             Soru(
                 soru="Mod nedir?",
-                secenekler=["En sık tekrarlanan değer", "Ortadaki değer", "Başlangıç değeri", "Son değer"],
+                secenekler=["Ortadaki değer", "Başlangıç değeri", "Son değer", "En sık tekrarlanan değer"],
                 dogru="En sık tekrarlanan değer",
                 aciklama="Mod = En çok görülen değer"
             ),
             Soru(
                 soru="1, 3, 5, 7, 9 sayılarının ortalaması kaçtır?",
-                secenekler=["5", "6", "7", "4"],
+                secenekler=["6", "7", "4", "5"],
                 dogru="5",
                 aciklama="(1+3+5+7+9)/5 = 25/5 = 5"
             ),
             Soru(
                 soru="2, 4, 4, 6, 8 sayılarının medyanı kaçtır?",
-                secenekler=["4", "5", "6", "3"],
+                secenekler=["5", "6", "3", "4"],
                 dogru="4",
                 aciklama="Sıralı: 2,4,4,6,8 → Ortadaki = 4"
             ),
@@ -567,65 +597,71 @@ SORU_BANKASI = {
         "orta": [
             Soru(
                 soru="Küpün farklı görünümlerinin sayısı kaçtır?",
-                secenekler=["6", "4", "8", "12"],
+                secenekler=["4", "8", "12", "6"],
                 dogru="6",
                 aciklama="Küpün 6 farklı yüzü vardır."
             ),
             Soru(
                 soru="Dikdörtgenler prizmasının kaç tane dikdörtgen yüzü vardır?",
-                secenekler=["6", "4", "8", "12"],
+                secenekler=["4", "8", "12", "6"],
                 dogru="6",
                 aciklama="Dikdörtgenler prizmasının 6 yüzü vardır."
             ),
             Soru(
                 soru="Kübün bir kenarı a ise, yüzey alanı kaçtır?",
-                secenekler=["6a²", "a²", "4a²", "8a²"],
+                secenekler=["a²", "4a²", "8a²", "6a²"],
                 dogru="6a²",
                 aciklama="6 × (a × a) = 6a²"
             ),
             Soru(
                 soru="Prizmanın hacmi formülü nedir?",
-                secenekler=["V = Taban Alanı × Yükseklik", "V = πr²h", "V = bh/3", "V = 2bh"],
+                secenekler=["V = πr²h", "V = bh/3", "V = 2bh", "V = Taban Alanı × Yükseklik"],
                 dogru="V = Taban Alanı × Yükseklik",
                 aciklama="Hacim = Taban × Yükseklik"
             ),
             Soru(
                 soru="Küpün kenarı 2 cm ise, hacmi kaç cm³'tür?",
-                secenekler=["8", "4", "6", "12"],
+                secenekler=["4", "6", "12", "8"],
                 dogru="8",
                 aciklama="V = 2³ = 8 cm³"
             ),
         ],
-        "ileri": [
+        "zor": [
             Soru(
                 soru="10, 20, 30, 40, 50 sayılarının modunu bulunuz.",
-                secenekler=["Mod yok", "30", "40", "50"],
+                secenekler=["30", "40", "50", "Mod yok"],
                 dogru="Mod yok",
                 aciklama="Hiç tekrarlanan sayı yoktur."
             ),
             Soru(
                 soru="1, 1, 2, 2, 2, 3, 4 sayılarının modunu bulunuz.",
-                secenekler=["2", "1", "3", "4"],
+                secenekler=["1", "3", "4", "2"],
                 dogru="2",
                 aciklama="2 en sık (3 kez) tekrarlanan sayıdır."
             ),
             Soru(
                 soru="İstatistikte açıklık (range) nedir?",
-                secenekler=["En büyük - En küçük değer", "Ortalama", "Medyan", "Mod"],
+                secenekler=["Ortalama", "Medyan", "Mod", "En büyük - En küçük değer"],
                 dogru="En büyük - En küçük değer",
                 aciklama="Range = Max - Min"
             ),
             Soru(
                 soru="Silindir hacmi formülü nedir?",
-                secenekler=["V = πr²h", "V = 2πr²h", "V = πrh", "V = πr³"],
+                secenekler=["V = 2πr²h", "V = πrh", "V = πr³", "V = πr²h"],
                 dogru="V = πr²h",
                 aciklama="Hacim = π × Yarıçap² × Yükseklik"
             ),
             Soru(
                 soru="Piramidin hacmi formülü nedir?",
-                secenekler=["V = (Taban Alanı × Yükseklik) / 3", "V = Taban Alanı × Yükseklik", "V = πr²h / 3", "V = 2bh/3"],
+                secenekler=["V = Taban Alanı × Yükseklik", "V = πr²h / 3", "V = 2bh/3", "V = (Taban Alanı × Yükseklik) / 3"],
                 dogru="V = (Taban Alanı × Yükseklik) / 3",
                 aciklama="Hacim = (Taban × h) / 3"
+            ),
+            Soru(
+                soru="Küre hacmi formülü nedir?",
+                secenekler=["V = 4πr³/3", "V = πr²h", "V = 4πr²", "V = 2πr"],
+                dogru="V = 4πr³/3",
+                aciklama="Küre hacmi = (4/3) × π × Yarıçap³"
             ),
         ],
     },
@@ -635,7 +671,7 @@ SORU_BANKASI = {
 
 class SeviyeYoneticisi:
     """Adaptif seviye ilerleme yöneticisi"""
-    SEVIYELER = ["temel", "orta", "ileri"]
+    SEVIYELER = ["temel", "orta", "zor"]
     
     def __init__(self):
         self.mevcut_seviye_index = 0
@@ -833,7 +869,7 @@ class AktifOgrenimSistemi:
             fg="white"
         ).pack(pady=10)
         
-        seviye_emoji = {"temel": "⭐", "orta": "⭐⭐", "ileri": "⭐⭐⭐"}
+        seviye_emoji = {"temel": "⭐", "orta": "⭐⭐", "zor": "⭐⭐⭐"}
         ilerleme = self.soru_index + 1
         toplam = len(self.sorular_listesi)
         
